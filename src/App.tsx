@@ -21,7 +21,7 @@ function App() {
 
             setTargetDate({
                 year: now.getUTCFullYear(),
-                month: now.getUTCMonth(),
+                month: now.getUTCMonth() + 1,
                 day: now.getUTCDate(),
                 hours: now.getUTCHours(),
                 minutes: now.getUTCMinutes(),

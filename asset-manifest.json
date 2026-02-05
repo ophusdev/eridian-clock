@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/eridian-clock/static/css/main.2b46547e.css",
-    "main.js": "/eridian-clock/static/js/main.7380b71e.js",
+    "main.js": "/eridian-clock/static/js/main.a07a308b.js",
     "static/js/453.d610bf92.chunk.js": "/eridian-clock/static/js/453.d610bf92.chunk.js",
     "index.html": "/eridian-clock/index.html",
     "main.2b46547e.css.map": "/eridian-clock/static/css/main.2b46547e.css.map",
-    "main.7380b71e.js.map": "/eridian-clock/static/js/main.7380b71e.js.map",
+    "main.a07a308b.js.map": "/eridian-clock/static/js/main.a07a308b.js.map",
     "453.d610bf92.chunk.js.map": "/eridian-clock/static/js/453.d610bf92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b46547e.css",
-    "static/js/main.7380b71e.js"
+    "static/js/main.a07a308b.js"
   ]
 }

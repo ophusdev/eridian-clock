@@ -1,6 +1,6 @@
 import { ClockFooterProps } from '../types'
 
-export default function ClockFooter(props: ClockFooterProps) {
+export default function ClockFooter(props: Readonly<ClockFooterProps>) {
     return (
         <>
             <div className="text-center mt-4 text-[#d86c6c] text-base tracking-widest uppercase">

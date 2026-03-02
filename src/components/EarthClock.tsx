@@ -3,7 +3,7 @@ import ClockHeader from './ClockHeader'
 import ClockFooter from './ClockFooter'
 import { IDate } from '../types'
 
-export default function EarthClock(props: IDate) {
+export default function EarthClock(props: Readonly<IDate>) {
     const [year, setYear] = useState<string>('0')
     const [month, setMonth] = useState<string>('0')
     const [day, setDay] = useState<string>('0')

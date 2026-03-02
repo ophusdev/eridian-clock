@@ -11,7 +11,7 @@ import HumanTimeConverter from '../classes/HumanTimeConverter'
 export default function EridianClock(dateObject: IDate) {
     const eridianConverter = useMemo(() => new EridianTimeConverter(), [])
     const humanConverter = useMemo(() => new HumanTimeConverter(), [])
-    const initialDigits: string[] = Array(5).fill(
+    const initialDigits: string[] = new Array(5).fill(
         eridianConverter.defaultSymbol()
     )
 

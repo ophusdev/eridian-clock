@@ -10,7 +10,7 @@ export default function Clock(props: Readonly<ClockProps>) {
             >
                 <div className="flex gap-4 z-10">
                     {props.digits.slice().map((digit, index) => (
-                        <ClockRow key={index} digit={digit} />
+                        <ClockRow key={`${digit}-${index}`} digit={digit} />
                     ))}
                 </div>
             </div>

@@ -8,7 +8,7 @@ import EridianTimeConverter, {
 } from '../classes/EridianTimeConverter'
 import HumanTimeConverter from '../classes/HumanTimeConverter'
 
-export default function EridianClock(dateObject: IDate) {
+export default function EridianClock(dateObject: Readonly<IDate>) {
     const eridianConverter = useMemo(() => new EridianTimeConverter(), [])
     const humanConverter = useMemo(() => new HumanTimeConverter(), [])
     const initialDigits: string[] = new Array(5).fill(

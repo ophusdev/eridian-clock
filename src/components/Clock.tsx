@@ -20,7 +20,6 @@ export default function Clock(props: ClockProps) {
 
 function ClockRow(props: ClockRowProps) {
     return (
-        <>
             <div
                 className="
             w-12 aspect-square flex-grow h-[50px] 
@@ -42,6 +41,5 @@ function ClockRow(props: ClockRowProps) {
                     {props.digit}
                 </div>
             </div>
-        </>
     )
 }

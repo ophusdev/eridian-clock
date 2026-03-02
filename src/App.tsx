@@ -33,23 +33,21 @@ function App() {
     })
 
     return (
-        <>
-            <div className="container">
-                <div className="justify-center items-center">
-                    <Header></Header>
+        <div className="container">
+            <div className="justify-center items-center">
+                <Header></Header>
+            </div>
+
+            <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
+                <div className="w-full lg:w-1/2 p-4 rounded-lg">
+                    <EarthClock {...targetDate}></EarthClock>
                 </div>
 
-                <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
-                    <div className="w-full lg:w-1/2 p-4 rounded-lg">
-                        <EarthClock {...targetDate}></EarthClock>
-                    </div>
-
-                    <div className="w-full lg:w-full p-4 rounded-lg">
-                        <EridianClock {...targetDate}></EridianClock>
-                    </div>
+                <div className="w-full lg:w-full p-4 rounded-lg">
+                    <EridianClock {...targetDate}></EridianClock>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,6 +1,5 @@
 export default function Header() {
     return (
-        <>
             <header className="text-center mt-32 lg:mb-16">
                 <p className="text-lg text-gray-300 p-4">
                     A parallel view of Earth Standard Time and the Eridian
@@ -13,6 +12,5 @@ export default function Header() {
                     </a>
                 </p>
             </header>
-        </>
     )
 }

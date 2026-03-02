@@ -47,7 +47,7 @@ export default class EridianTimeConverter {
     }
 
     _convertDigits(digit: string) {
-        const d = parseInt(digit, 10)
+        const d = Number.parseInt(digit, 10)
         return this.toEridianNumeral(d)
     }
 

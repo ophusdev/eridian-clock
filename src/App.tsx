@@ -5,32 +5,29 @@ import { useEffect, useState } from 'react'
 import { IDate } from './types'
 import Header from './components/Header'
 
+function getCurrentDate(): IDate {
+    const now = new Date()
+
+    return {
+        year: now.getUTCFullYear(),
+        month: now.getUTCMonth() + 1,
+        day: now.getUTCDate(),
+        hours: now.getUTCHours(),
+        minutes: now.getUTCMinutes(),
+        seconds: now.getUTCSeconds(),
+    }
+}
+
 function App() {
-    const [targetDate, setTargetDate] = useState<IDate>({
-        year: 0,
-        month: 0,
-        day: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-    })
+    const [targetDate, setTargetDate] = useState<IDate>(getCurrentDate)
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const now = new Date()
-
-            setTargetDate({
-                year: now.getUTCFullYear(),
-                month: now.getUTCMonth() + 1,
-                day: now.getUTCDate(),
-                hours: now.getUTCHours(),
-                minutes: now.getUTCMinutes(),
-                seconds: now.getUTCSeconds(),
-            })
+            setTargetDate(getCurrentDate())
         }, 1000)
 
         return () => clearInterval(interval)
-    })
+    }, [])
 
     return (
         <div className="container">

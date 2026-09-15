@@ -1,15 +1,12 @@
 export default class HumanTimeConverter {
     calculateSecondsSinceMidnight(targetDate: Date) {
-        const midnight = new Date(
+        const midnight = Date.UTC(
             targetDate.getUTCFullYear(),
             targetDate.getUTCMonth(),
-            targetDate.getUTCDate(),
-            1, //need midnight
-            0,
-            0
+            targetDate.getUTCDate()
         )
 
-        const msSinceMidnight = targetDate.getTime() - midnight.getTime()
+        const msSinceMidnight = targetDate.getTime() - midnight
 
         const secondsSinceMidnight = msSinceMidnight / 1000
 

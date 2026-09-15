@@ -30,9 +30,9 @@ export default function EridianClock(dateObject: Readonly<IDate>) {
             )
             setDay(eridianConverter.singleNumberToEridianString(dateObject.day))
 
-            let hours = dateObject.hours + 1
+            const hours = dateObject.hours + 1
 
-            let secondsFromMidnight =
+            const secondsFromMidnight =
                 humanConverter.calculateSecondsSinceMidnight(
                     new Date(
                         dateObject.year,

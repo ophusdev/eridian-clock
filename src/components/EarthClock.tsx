@@ -19,7 +19,7 @@ export default function EarthClock(props: Readonly<IDate>) {
             const minutes = dateObject.minutes.toString().padStart(2, '0')
             const seconds = dateObject.seconds.toString().padStart(2, '0')
 
-            let paddedString = hours + ':' + minutes + ':' + seconds
+            const paddedString = hours + ':' + minutes + ':' + seconds
 
             setDigits(paddedString)
 

@@ -56,7 +56,7 @@ export default class EridianTimeConverter {
     }
 
     toEridianDigits(base6TimeStr: string) {
-        let alienTimeStr: string[] = []
+        const alienTimeStr: string[] = []
 
         for (const digitChar of base6TimeStr) {
             alienTimeStr.push(this._convertDigits(digitChar))
@@ -66,7 +66,7 @@ export default class EridianTimeConverter {
     }
 
     singleNumberToEridianString(number: number) {
-        let base6Number = this.toBase6(number)
+        const base6Number = this.toBase6(number)
         return this.toEridianString(base6Number)
     }
 

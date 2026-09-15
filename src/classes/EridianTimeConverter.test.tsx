@@ -3,11 +3,11 @@ import HumanTimeConverter from './HumanTimeConverter'
 
 test('compare 2025 year', () => {
     const converter = new EridianTimeConverter()
-    let number = 2025
-    let yearBase6 = converter.toBase6(number)
+    const number = 2025
+    const yearBase6 = converter.toBase6(number)
 
-    let year = converter.toEridianString(yearBase6)
-    let yearDigits = converter.toEridianDigits(yearBase6)
+    const year = converter.toEridianString(yearBase6)
+    const yearDigits = converter.toEridianDigits(yearBase6)
 
     expect(year).toEqual('IλVIλ')
     expect(yearDigits).toEqual(['I', 'λ', 'V', 'I', 'λ'])
@@ -15,9 +15,9 @@ test('compare 2025 year', () => {
 
 test('compare 7200 seconds', () => {
     const converter = new EridianTimeConverter()
-    let number = Math.floor(7200 / 2.366) // this is a number and need to be converted to Eridian ticks
-    let yearBase6 = converter.toBase6(number)
-    let yearDigits = converter.toEridianDigits(yearBase6)
+    const number = Math.floor(7200 / 2.366) // this is a number and need to be converted to Eridian ticks
+    const yearBase6 = converter.toBase6(number)
+    const yearDigits = converter.toEridianDigits(yearBase6)
 
     expect(yearDigits).toEqual(['V', 'V', 'ℓ', 'λ', 'I'])
 })
